@@ -103,7 +103,7 @@ extension WinkLoadingView {
         anim.duration = 0.7
         anim.delegate = self
         anim.timingFunction = timingFunction
-        anim.fillMode = kCAFillModeForwards
+        anim.fillMode = CAMediaTimingFillMode.forwards
         anim.isRemovedOnCompletion = false
         outterCircle.add(anim, forKey: nil)
 
@@ -134,7 +134,7 @@ extension WinkLoadingView {
         group.timingFunction = timingFunction
         group.delegate = delegate
         group.isRemovedOnCompletion = false
-        group.fillMode = kCAFillModeForwards
+        group.fillMode = CAMediaTimingFillMode.forwards
         layer.add(group, forKey: KeyPath.smile)
     }
 }
